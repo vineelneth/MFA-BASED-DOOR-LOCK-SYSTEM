@@ -4,7 +4,8 @@
 
 **Face Recognition + TOTP + Vibration-Based Intrusion Detection on a dual-ESP32 platform**
 
-<img src="docs/images/prototype_setup.png" alt="Prototype setup" width="620"/>
+<img width="842" height="478" alt="image" src="https://github.com/user-attachments/assets/f6b02c59-3c99-4030-838d-e31bf34c3277" />
+
 
 *A low-cost, real-time smart access control system that opens the door only when **who you are** (your face) and **what you have** (a Google Authenticator code) both check out — and tells you on Telegram the moment someone tries to break in.*
 
@@ -266,8 +267,8 @@ Board: **ESP32 Dev Module**. Upload `esp32_main.ino`, wire the UART link, and po
 
 <table>
 <tr>
-<td align="center"><img src="docs/images/lcd_syncing_time.png" width="260"/><br/><sub><b>Boot:</b> NTP time sync</sub></td>
-<td align="center"><img src="docs/images/lcd_waiting_for_face.png" width="260"/><br/><sub><b>Idle:</b> waiting for face</sub></td>
+<td align="center"><img src="https://github.com/user-attachments/assets/6c649563-f8a5-472d-99d2-4afeff33df1b" width="260"/><br/><sub><b>Boot:</b> NTP time sync</sub></td>
+<td align="center"><img src="https://github.com/user-attachments/assets/f6779d04-a445-402c-b8e0-cd4b8483d8d7" width="260"/><br/><sub><b>Idle:</b> waiting for face</sub></td>
 </tr>
 <tr>
 <td align="center"><img src="docs/images/lcd_enter_otp.png" width="260"/><br/><sub><b>Factor 1 passed:</b> greeting + OTP prompt</sub></td>
