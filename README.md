@@ -271,24 +271,21 @@ Board: **ESP32 Dev Module**. Upload `esp32_main.ino`, wire the UART link, and po
 <td align="center"><img src="https://github.com/user-attachments/assets/f6779d04-a445-402c-b8e0-cd4b8483d8d7" width="260"/><br/><sub><b>Idle:</b> waiting for face</sub></td>
 </tr>
 <tr>
-<td align="center"><img src="docs/images/lcd_enter_otp.png" width="260"/><br/><sub><b>Factor 1 passed:</b> greeting + OTP prompt</sub></td>
-<td align="center"><img src="docs/images/lcd_access_granted.png" width="260"/><br/><sub><b>Factor 2 passed:</b> lock released</sub></td>
+<td align="center"><img src="https://github.com/user-attachments/assets/7c684cc7-2444-47b9-bada-19aab3f64122" width="260"/><br/><sub><b>Factor 1 passed:</b> greeting + Access grant after a successful otp</sub></td>
 </tr>
 <tr>
-<td align="center"><img src="docs/images/lcd_wrong_otp.png" width="260"/><br/><sub><b>Wrong OTP</b> attempt tracked</sub></td>
-<td align="center"><img src="docs/images/lcd_system_locked.png" width="260"/><br/><sub><b>Brute force:</b> 120-s lockout</sub></td>
+<td align="center"><img src="https://github.com/user-attachments/assets/8e2b929e-6956-4d62-83f4-fc170fae2ae3" width="260"/><br/><sub><b>Wrong OTP</b> attempt tracked</sub></td>
+<td align="center"><img src="https://github.com/user-attachments/assets/9f308244-3ce1-4905-a4a5-fd90a8c61329" width="260"/><br/><sub><b>Brute force:</b> 120-s lockout</sub></td>
 </tr>
 <tr>
-<td align="center" colspan="2"><img src="docs/images/lcd_door_breaking.png" width="300"/><br/><sub><b>Simulated forced entry</b> detected → alarm + Telegram</sub></td>
+<td align="center" colspan="2"><img src="https://github.com/user-attachments/assets/1cd0c28a-2db5-49b1-88ad-194857e8130a" width="300"/><br/><sub><b>Simulated forced entry</b> detected → alarm + Telegram</sub></td>
 </tr>
 </table>
 
 ### Admin web interface (ESP32-CAM)
 
 <p align="center">
-<img src="docs/images/web_dashboard.png" height="300"/>&nbsp;&nbsp;
-<img src="docs/images/face_naming_manager.png" height="300"/>&nbsp;&nbsp;
-<img src="docs/images/delete_faces.png" height="300"/>
+<img width="842" height="664" alt="image" src="https://github.com/user-attachments/assets/6e7bbcc0-aba6-41b5-818b-1343b10e05e7" />
 </p>
 <p align="center"><sub>Live stream & camera controls · Face Naming Manager (<code>/names</code>) · Flash wipe (<code>/delete_faces</code>)</sub></p>
 
