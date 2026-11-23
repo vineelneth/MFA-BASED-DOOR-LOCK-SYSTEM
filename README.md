@@ -50,40 +50,15 @@ Every suspicious event — unknown face, OTP brute force, master-PIN attack, or 
 
 ---
 
-## 🏗️ System Architecture
+🏗️ System Architecture
 
 The workload is split across two microcontrollers so heavy vision processing never blocks real-time security logic.
 
-```mermaid
-flowchart LR
-    subgraph CAM["📷 Module B — ESP32-CAM (Vision Unit)"]
-        OV[OV2640 Camera] --> MTMN[MTMN Face Detection<br/>+ Recognition]
-        MTMN --> WEB[Admin Web Server<br/>/names · /delete_faces]
-    end
+<p align="center"> <img src="docs/images/system_architecture.png" alt="System architecture" width="100%"/> </p>
 
-    subgraph MAIN["🧠 Module A — ESP32 Dev (Security Controller)"]
-        SM[State Machine<br/>TOTP · Lockouts]
-    end
+<sub>Editable source: <a href="docs/diagrams/system_architecture.mmd">docs/diagrams/system_architecture.mmd</a></sub>
 
-    MTMN -- "UART  FACE_OK:&lt;name&gt;" --> SM
-    KP[⌨️ 4x4 Keypad] --> SM
-    VIB[📳 SW-420 Vibration] --> SM
-    SM --> LCD[🖥️ 16x2 I2C LCD]
-    SM --> BUZ[🔊 Active Buzzer]
-    SM --> RLY[🔌 Relay] --> SOL[🔒 12V Solenoid Lock]
-
-    NTP[(🕒 pool.ntp.org)] -. boot sync .-> SM
-    SM -. text alerts .-> TG[(📱 Telegram Bot)]
-    MTMN -. intruder photo .-> TG
-    GA[📲 Google Authenticator] -. user reads code .-> KP
-```
-
-<details>
-<summary><b>🔌 View full circuit schematic</b></summary>
-<br/>
-<p align="center"><img src="docs/images/circuit_schematic.png" alt="Circuit schematic" width="700"/></p>
-</details>
-
+<details> <summary><b>🔌 View full circuit schematic</b></summary> <br/> <p align="center"><img src="docs/images/circuit_schematic.png" alt="Circuit schematic" width="700"/></p> </details>
 ---
 
 ## ⚙️ How It Works
