@@ -10,13 +10,10 @@
 *A low-cost, real-time smart access control system that opens the door only when **who you are** (your face) and **what you have** (a Google Authenticator code) both check out — and tells you on Telegram the moment someone tries to break in.*
 
 [Features](#-features) •
-[Architecture](#-system-architecture) •
-[How It Works](#-how-it-works) •
 [Hardware](#-hardware) •
 [Wiring](#-pin-configuration) •
 [Setup](#-getting-started) •
 [Results](#-results) •
-[Team](#-team)
 
 </div>
 
