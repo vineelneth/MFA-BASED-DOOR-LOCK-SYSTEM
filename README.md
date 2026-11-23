@@ -297,7 +297,7 @@ Board: **ESP32 Dev Module**. Upload `esp32_main.ino`, wire the UART link, and po
 
 ---
 
-## 🆚 Compared with Related Work
+## Compared with Related Work
 
 | Approach | Limitation | This project |
 |---|---|---|
@@ -308,7 +308,7 @@ Board: **ESP32 Dev Module**. Upload `esp32_main.ino`, wire the UART link, and po
 
 ---
 
-## ⚠️ Limitations & 🔮 Future Work
+## ⚠️ Limitations & Future Work
 
 | Current limitation | Possible enhancement |
 |---|---|
@@ -318,20 +318,6 @@ Board: **ESP32 Dev Module**. Upload `esp32_main.ino`, wire the UART link, and po
 | No power backup | Li-ion UPS with fail-secure lock policy |
 | Telegram TLS uses `setInsecure()` | Pin Telegram's root CA certificate |
 | Brownout detector disabled on the CAM | Better supply decoupling so BOD can stay enabled |
-
----
-
-## 👥 Team
-
-| Name | Roll No. |
-|---|---|
-| **Sama Vineel** | 12204055 |
-| **Chemuduru Keerthana** | 12204013 |
-| **Amballa Mohana Venkata Keerthana** | 12204002 |
-
-**Guide:** Dr. G. Umamaheshwara Reddy, Professor, Dept. of ECE
-**Head of Department:** Dr. I. Kullayamma
-**Institution:** Sri Venkateswara University College of Engineering, Tirupati – 517502
 
 ---
 
@@ -345,7 +331,6 @@ Board: **ESP32 Dev Module**. Upload `esp32_main.ino`, wire the UART link, and po
 6. Rajkamal, *Embedded Systems: Architecture, Programming and Design*, 3rd ed., McGraw-Hill, 2017
 7. A. Bahga & V. Madisetti, *Internet of Things: A Hands-On Approach*, Universities Press, 2015
 
-Full reference list is in the [project report](docs/FINAL_YEAR_PROJECT_REPORT.pdf).
 
 ---
 
